@@ -305,8 +305,509 @@ console.log(7 < 10)// true
 console.log(40 < 50)// true
 console.log(4 < 5) //true
 
-// # Question 62
-console.log( 18 >= 18)// true
+// ======================================================
+// PART C - 7. GREATER THAN OR EQUAL >=
+// ======================================================
+
+// 1
+let age = 18;
+let votingAge = 18;
+console.log(age >= votingAge);
+
+// 2
+let percentage = 75;
+let minimumPercentage = 75;
+console.log(percentage >= minimumPercentage);
+
+// 3
+let userAge = 14;
+let minimumAge = 13;
+console.log(userAge >= minimumAge);
+
+// 4
+let currentScore = 500;
+let minimumScore = 500;
+console.log(currentScore >= minimumScore);
+
+// 5
+let experience = 3;
+let requiredExperience = 2;
+console.log(experience >= requiredExperience);
+
+// Additional
+console.log(5 >= 5);       // true
+console.log(null >= 0);    // true
+console.log(undefined >= 0); // false
+console.log("5" >= 5);     // true
+console.log("10" >= 5);    // true
+
+
+// ======================================================
+// 8. LESS THAN OR EQUAL <=
+// ======================================================
+
+let peopleInLift = 7;
+let maxCapacity = 8;
+console.log(peopleInLift <= maxCapacity);
+
+let fileSize = 5;
+let maxFileSize = 5;
+console.log(fileSize <= maxFileSize);
+
+let participantAge = 12;
+let maxJuniorAge = 12;
+console.log(participantAge <= maxJuniorAge);
+
+let dataUsed = 9.5;
+let dataLimit = 10;
+console.log(dataUsed <= dataLimit);
+
+let classStrength = 40;
+let maximumStrength = 40;
+console.log(classStrength <= maximumStrength);
+
+// Additional
+console.log(5 <= 5);          // true
+console.log(null <= 0);       // true
+console.log(undefined <= 0);  // false
+console.log("5" <= 5);        // true
+console.log("3" <= 5);        // true
+
+
+// ======================================================
+// PART D - 1. LOGICAL AND &&
+// ======================================================
+
+let storedUsername = "admin";
+let storedPassword = 1234;
+console.log(storedUsername === "admin" && storedPassword === 1234);
+
+let isLoggedIn = true;
+let hasPermission = true;
+console.log(isLoggedIn && hasPermission);
+
+let inStock = true;
+let price = 800;
+console.log(inStock && price < 1000);
+
+let marks = 75;
+let attendance = 80;
+console.log(marks > 65 && attendance > 70);
+
+let isWeekend = true;
+let isHoliday = false;
+console.log(isWeekend && isHoliday);
+
+// Additional
+console.log(0 && 10);
+console.log((5 > 3 && 10) || 0);
+console.log("Hello" && "" && "World");
+
+let value = 5;
+let condition = value && (value = 0);
+console.log(condition);
+console.log(value);
+
+let x = 10;
+let y = 20;
+console.log((x && y) && (x > y));
+
+
+// ======================================================
+// 2. LOGICAL OR ||
+// ======================================================
+
+let passwordCorrect = true;
+let otpValid = false;
+console.log(passwordCorrect || otpValid);
+
+let isMember = false;
+let hasCoupon = true;
+console.log(isMember || hasCoupon);
+
+let personAge = 16;
+let height = 155;
+console.log(personAge > 18 || height > 150);
+
+let emailGiven = true;
+let phoneGiven = false;
+console.log(emailGiven || phoneGiven);
+
+let score = 900;
+let timeBonus = true;
+console.log(score > 1000 || timeBonus);
+
+// Additional
+console.log(0 || false || "" || null || 42);
+console.log("Hello" || 0, 0 || "Hi");
+
+let scoreA = 10;
+let scoreB = 20;
+console.log((scoreA < 5) || (scoreB > 15));
+
+let valueA = 5;
+let conditionA = valueA || (valueA = 0);
+console.log(conditionA);
+console.log(valueA);
+
+console.log("" || 0 || false || null || undefined || "OK");
+
+
+// ======================================================
+// 3. LOGICAL NOT !
+// ======================================================
+
+let isBanned = false;
+console.log(!isBanned);
+
+let isCompleted = false;
+console.log(!isCompleted);
+
+let isOn = true;
+console.log(!isOn);
+
+let isActive = false;
+console.log(!isActive);
+
+let isReadOnly = false;
+console.log(!isReadOnly);
+
+// Additional
+console.log(!0, !1);
+console.log(!"Hello", !"");
+console.log(!5);
+
+console.log(!(10 && 20));
+console.log(!(0 || 1));
+
+
+// ======================================================
+// 4. MIXED LOGICAL OPERATORS
+// ======================================================
+
+let member = true;
+let banned = false;
+console.log(member && !banned);
+
+let student = true;
+let senior = false;
+let bannedUser = true;
+console.log((student || senior) && !bannedUser);
+
+let nameGiven = true;
+let email = false;
+let phone = true;
+console.log(nameGiven && (email || phone));
+
+let admin = true;
+let token = false;
+let suspended = false;
+console.log((admin || token) && !suspended);
+
+let gameScore = 1200;
+let bonus = false;
+let extraLife = true;
+console.log(gameScore > 1000 && (bonus || extraLife));
+
+// Additional
+console.log(0 || 10 && 20);
+console.log(true && false || true);
+console.log(!(10 && 20) || (10 > 5 && 20 < 30) && true);
+console.log(5 && 0 || 10);
+console.log(!(false || true) && false || true);
+
+
+// ======================================================
+// PART E - INCREMENT / DECREMENT
+// ======================================================
+
+// Part a
+
+let counter = 5;
+counter++;
+console.log(counter);
+
+let lives = 3;
+lives--;
+console.log(lives);
+
+let points = 10;
+points++;
+console.log(points);
+
+let items = 8;
+items--;
+console.log(items);
+
+let count = 0;
+count++;
+count++;
+console.log(count);
+
+
+// Part b
+
+let x1 = 5;
+let y1 = x1++;
+console.log(x1, y1); // x1 becomes 6, but y1 gets old value 5
+
+let a1 = 5;
+let b1 = ++a1;
+console.log(a1, b1); // both become 6
+
+let lives2 = 3;
+let previousLives = lives2--;
+console.log(lives2, previousLives);
+
+let attempts = 0;
+let currentAttempts = ++attempts;
+console.log(attempts, currentAttempts);
+
+let points2 = 100;
+points2++;
+points2--;
+console.log(points2);
+
+
+// Part c
+
+let x2 = 10;
+let y2 = x2++;
+let z2 = ++x2;
+console.log(x2, y2, z2);
+
+let a2 = 5;
+let b2 = a2-- + ++a2;
+console.log(a2, b2);
+
+let m = 7;
+let n = --m + m++;
+console.log(m, n);
+
+let p = 3;
+let q = p++ + ++p + p;
+console.log(p, q);
+
+let val = 0;
+val = val++ + ++val;
+console.log(val);
+
+
+// ======================================================
+// PART F - typeof
+// ======================================================
+
+// Part a
+
+let name = "Rahul";
+console.log(typeof name);
+
+let studentAge = 25;
+console.log(typeof studentAge);
+
+let studentStatus = true;
+console.log(typeof studentStatus);
+
+let city;
+console.log(typeof city);
+
+console.log(typeof null);
+
+
+// Part b
+
+console.log(typeof 42);
+console.log(typeof "Hello");
+console.log(typeof true);
+console.log(typeof undefined);
+
+console.log(typeof null);
+console.log(typeof {});
+console.log(typeof []);
+
+console.log(typeof NaN);
+console.log(typeof Infinity);
+console.log(typeof function(){});
+
+let priceValue = 99.99;
+let message = "Welcome";
+let active = false;
+
+console.log(typeof priceValue);
+console.log(typeof message);
+console.log(typeof active);
+
+let nullValue = null;
+console.log(typeof nullValue);
+console.log(typeof nullValue === "object");
+
+
+// Part c
+
+console.log(typeof typeof 100);
+console.log(typeof typeof "Hi");
+console.log(typeof typeof true);
+
+let numberValue = 10;
+let stringValue = "10";
+
+console.log(typeof numberValue === typeof stringValue);
+console.log(typeof numberValue == typeof stringValue);
+
+console.log(typeof null === "object");
+console.log(typeof [] === "object");
+console.log(typeof {} === "object");
+
+let unknown;
+console.log(typeof unknown);
+
+unknown = null;
+console.log(typeof unknown);
+
+unknown = 0;
+console.log(typeof unknown);
+
+console.log(typeof NaN === "number");
+console.log(typeof Infinity === "number");
+console.log(typeof (1 / 0));
+
+
+// ======================================================
+// PART G - TYPE COERCION
+// ======================================================
+
+// Part a
+
+let numberFromString = Number("25");
+console.log(numberFromString + 10);
+
+let number = 100;
+console.log(String(number) + " rupees");
+
+console.log(Boolean(0));
+console.log(Boolean("Hello"));
+
+console.log(+"50" * 2);
+
+
+// Part b
+
+console.log("10" - 5);
+console.log("10" + 5);
+console.log("10" * 2);
+console.log("10" / 2);
+
+console.log("5" - "2");
+console.log("5" + "2");
+console.log("5" * "2");
+console.log("5" / "2");
+
+console.log(Number("123"));
+console.log(Number("123abc"));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(null));
+console.log(Number(undefined));
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean("0"));
+console.log(Boolean([]));
+console.log(Boolean({}));
+console.log(Boolean(null));
+
+console.log(String(100));
+console.log(String(true));
+console.log(String(null));
+console.log(String(undefined));
+console.log(100 + "");
+
+
+// Part c
+
+console.log("5" + 3 + 2);
+console.log(5 + 3 + "2");
+console.log("5" - 3 + 2);
+console.log(5 - "3" + "2");
+
+console.log(true + true);
+console.log(true + false);
+console.log(true + "false");
+console.log(false + "true");
+
+console.log(null + 5);
+console.log(undefined + 5);
+console.log(null + "5");
+console.log(undefined + "5");
+
+console.log([] + []);
+console.log([] + {});
+console.log({} + []);
+console.log({} + {});
+
+let stringNumber = "10";
+let numberFive = 5;
+
+let resultC = stringNumber + numberFive;
+let resultD = stringNumber - numberFive;
+let resultE = +stringNumber + numberFive;
+
+console.log(resultC, typeof resultC);
+console.log(resultD, typeof resultD);
+console.log(resultE, typeof resultE);
+
+console.log(!!"Hello");
+console.log(!!"");
+console.log(!!0);
+console.log(!!1);
+console.log(!!null);
+console.log(!!undefined);
+
+console.log(Number(""));
+console.log(Number(" "));
+console.log(Number("0"));
+console.log(Number("  25  "));
+console.log(Number("25px"));
+
+let value1 = "5";
+let value2 = 2;
+
+console.log(value1 + value2);
+console.log(+value1 + value2);
+console.log(value1 - value2);
+console.log(value1 * value2);
+console.log(value1 / value2);
+
+
+// ======================================================
+// BONUS MIXED PRACTICE
+// ======================================================
+
+let counterBonus = 5;
+console.log(typeof counterBonus++);
+console.log(counterBonus);
+console.log(typeof ++counterBonus);
+console.log(counterBonus);
+
+let xBonus = "10";
+let yBonus = ++xBonus;
+console.log(xBonus, yBonus, typeof xBonus, typeof yBonus);
+
+let aBonus = "5";
+let bBonus = aBonus++;
+console.log(aBonus, bBonus, typeof aBonus, typeof bBonus);
+
+console.log(typeof (1 + "2"));
+console.log(typeof (1 - "2"));
+console.log(typeof (1 * "2"));
+console.log(typeof (1 / "2"));
+
+let nullBonus = null;
+console.log(typeof nullBonus);
+console.log(nullBonus + 1);
+console.log(nullBonus - 1);
+console.log(nullBonus * 1);
+console.log(Boolean(nullBonus));
 
 
 

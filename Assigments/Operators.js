@@ -283,6 +283,33 @@ console.log(50 !== 60) //true
 console.log(true !== "true") //true
 console.log(null !== undefined) // true
 
+// # Question 59
+let prompt = require("prompt-sync")();
+let myAge = Number(prompt("Enter your age: "))
+if (myAge > 18){
+    console.log("Eligible to vote.")
+}else{
+    console.log("Not eligible to vote.")
+}
+
+// # QUestion 60
+console.log(650 > 500)// true
+console.log( 1200 > 1000)// true
+console.log(40000 > 30000)// true
+console.log(11000 > 1000)//true
+
+// # QUestion 61
+console.log (30 < 35) // true
+console.log(8000 < 10000) // true
+console.log(7 < 10)// true
+console.log(40 < 50)// true
+console.log(4 < 5) //true
+
+// # Question 62
+console.log( 18 >= 18)// true
+
+
+
 
 
 
